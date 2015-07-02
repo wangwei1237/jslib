@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<!--<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />-->
+	<title>page</title>
+	<link rel="stylesheet" href="./page_files/base.css">
+	<link rel="stylesheet" href="./page_files/page.css">
+	<script type="text/javascript" src="./page_files/page.js"></script>
+	<style type="text/css">
+		.wrapper{
+			width:960px;
+			margin:0 auto;
+			padding:50px 0;
+		}
+		h1{
+			border-bottom:1px solid #ccc;
+		}
+		h2{
+			font-size:12px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="wrapper">
+	
+	<h1 class="mb20">翻页控件</h1>
+
+	<div class="page tc mb20" id="page-js-3"></div>
+	<script type="text/javascript">
+		PPage("page-js-3",1,15, 5, "ww");
+		
+		function ww(pageNum){
+			PPage("page-js-3",pageNum,15,5, "ww");
+		};
+		
+	</script>
+	</div>
+
+</body></html>
