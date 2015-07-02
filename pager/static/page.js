@@ -10,8 +10,7 @@
 */
 var PPage=(function(window){
 	
-	return function(pid,curNum,maxNum, maxBut, funcName){
-		
+	return function(pid,curNum,maxNum, maxBut, funcName){	
 		function getAHtml(num,txt){
 			return '<a href="javascript:;" onclick="'+funcName+'('+num+');return false;">'+(typeof txt === 'string' ? txt : num)+'</a>';
 		};
@@ -110,8 +109,6 @@ var PPage=(function(window){
 				}
 			}
 		}
-		
-		
 		
 		page.innerHTML=sResult;
 	};
